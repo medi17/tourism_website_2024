@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary-color: #A4B3C5;
+    --head-text-color: #ffffff;
+    --dark: #000000;
+    --gray-500: #00000099;
+    --gray-700: rgba(0, 0, 0, 0.8);
+    --gray-100: rgba(0, 0, 0, 0.15);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.contact-heading {
+        font-size: 2.5rem; 
+        font-weight: 700;
+        color: #343a40;  
+        text-transform: uppercase;  
+        letter-spacing: 2px;  
+        margin-bottom: 0.5rem;
+}
+.subheading {
+        font-size: 1.25rem; 
+        font-weight: 400; 
+        color: #5f5c5c; 
+}
+.shadowing{
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.073); 
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.29);
+    border-width:1px;
+}
+.input-sizing{
+    height: 40px;
+    width:80%;
+}
+.textarea-sizing{
+    height: 140px;
+    width:80%;
+}
+label {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    font-weight: 500; 
+    color: #333; 
+}
+.contact img ,.social-media a img{
+    width: 40px; 
+    height: auto; 
+}
+
+
+button{
+background-color: black;
+color: white;
+border-radius: 8px;  
+padding: 10px 20px;  
+border: 1px solid transparent;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+height: 40px;
+width:80%;
+}
+
+.call-us-heading,
+.email-us-heading,.address-heading,.website-heading,.follow-us{
+    font-size: 1.5rem;  
+    font-weight: bold;  
+    color: #343a40;  
+    text-transform: uppercase;  
+    letter-spacing: 1px;  
+    margin-bottom: 0.5rem;  
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.map-container {
+position:relative;
+width: 100%;
+height: 0;
+padding-bottom: 56.25%; 
+
+}
+
+.map-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.mountain{
+    background: url("../images/contact-images/lalibela\ desktop.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 370px;
+}
+
+.text{
+    padding: 20px 20px 10px;
+}
+.text h1{
+    color: var(--head-text-color);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.text p{
+    font-family: "Open Sans", serif;
+    color: var(--head-text-color);
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 5px;
+}
+
+.socials .circle{
+    padding: 6px 10px;
+    border: 1.5px solid var(--head-text-color);
+}
+.socials .pin{
+    padding: 6px 12px;
+}
+.socials a{
+    font-size: 20px;
+}
+
+
+footer{
+    background-color: var(--gray-100);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .gate{
+    font-family: "Open Sans", serif;
+    font-size: 12px;
+    line-height: 130%;
+    padding-right: 170px;
+    color: var(--gray-500);
+}
+footer h2{
+    font-family: "Roboto", sans-serif; 
+    font-size: 20px; 
+    line-height: 16px; 
+    font-weight: 600;
+}
+
+footer ul{
+    padding: 10px 0 0 0;
+    list-style: none;
+}
+footer a, footer h3{
+    text-decoration: none;
+    font-family: "Open Sans", serif;
+    color: var(--gray-500);
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 5px;
+}
+
+
+@media (min-width: 576px) {
+    .contact img ,.social-media a img{
+        width: 60px; 
+    }
+}
+@media (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    footer h2 {
+        padding-top: 18px;
+
+    }
+    footer .gate{
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    footer a {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .contact img ,.social-media a img {
+        width: 80px; 
+    }
+}
+.signup-div{
+    align-self: center;
+    height: 768px;
+    background: var(--head-text-color);
+    width: 300px;
+    margin: 60px 0;
+    border-radius: 16px;
+}
+.create-text{
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    line-height: 130%;
+}
+.have-account{
+    color: var(--gray-700);
+    padding: 0 10px 0 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+}
+.have-account a{
+    color: blue;
+    text-decoration: none;
+}
+.forgot a{
+    color: blue;
+    text-decoration: none;
+}
+.name {
+    padding:16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--gray-500);
+}
+.box{
+    width: 229px;
+    height: 45px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin-left: 25px;
+    padding: 10px;
+}
+.create-btn{
+    border: none;
+    text-align: center;
+    align-items: center;
+    color: var(--head-text-color);
+    background-color: var(--dark);
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* login-CSS */
+
+.login-div {
+    height: 505px;
+    background: var(--head-text-color);
+    width: 300px;
+    margin: 60px 0;
+    border-radius: 16px;
+}
+.forgot{
+    padding: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--gray-500);
+}
+.forgot-pass{
+    color: blue;
+}
+.forgot a {
+    color: blue;
+    text-decoration: none;
+}
+.xBtn{
+    cursor: pointer;
+    font-size: 35px;
+    text-align: center;
+    background-color: var(--head-text-color);
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+}
+
